@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6d275e;
+}
+
+.app-wrapper {
+  position: relative;
+  background: url('https://cdn.wallpapersafari.com/28/4/oqTACX.png') ;
+  background-position: center center ;
+	background-size: cover;
+  height: 600px;
+  box-sizing: border-box;
+  border: 5px solid #191919;
+  border-radius: 40px;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.top-block {
+  position: relative;
+  top: 0;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 20px;
+  background-color: #191919;
+  border-radius: 0 0 15px 15px;
+}
+
+.line-top {
+  width: 40px;
+  height: 3px;
+  margin-top: -3px;
+  background-color: #000;
+}
+
+.line-bottom {
+  width: 40px;
+  height: 3px;
+  margin-top: 3px;
+  background-color: #222222;
+}
+
+.camera {
+  position: absolute;
+  right: 45px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #203a78;
+  border: 3px solid #000;
+}
+
+.time {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.icons {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa-wifi,
+.fa-battery-three-quarters {
+ font-size: 12px;
+ margin: 6px 4px;
+}
+
+.header {
+  color: #fff;
+}
+
+.title {
+  font-family:  'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.task-input {
+  width: 250px;
+  margin: 0 20px;
+  padding: 8px;
+  border-radius: 15px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background-color:transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.btn {
+  margin: 0 10px;
+  padding: 8px;
+  border-radius: 15px;
+  background-color: transparent;
+  font-weight: 700;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+.btn:hover {
+  color: rgb(77, 141, 170);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  list-style-type: none ;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin:  10px 0;
+  padding: 5px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.list-item span {
+  color: rgb(77, 141, 170);
+  font-weight: 700;
+  transition: .2s ease-in-out;
+}
+
+.list-item span:hover {
+  color: #ffff;
+}
+
+.task-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.task-btn:hover {
+  color: rgb(77, 141, 170);
+}
+
+.no-tasks {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center ;
+}
+
+.line {
+  position: absolute;
+  bottom: 10px;
+  margin: 0 auto;
+  width: 130px;
+  height: 5px;
+  background-color: #fefdfe;
+  border-radius:  15px;
+}
