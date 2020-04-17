@@ -3,6 +3,7 @@ import React, { createContext, useState, useEffect } from "react"
 export const TaskListContext = createContext();
 
 const TaskListContextProvider = (props) => {
+    console.log(props)
     const initialState = JSON.parse(localStorage.getItem('tasks')) || []
     const [tasks, setTasks] = useState(initialState);
     const [editItem, setEditItem] = useState(null)
@@ -11,7 +12,7 @@ const TaskListContextProvider = (props) => {
         localStorage.setItem('tasks', JSON.stringify(tasks))
     }, [tasks])
 
-    const addTask = (title, id) => {
+    const addTask = (title) => {
         setTasks([...tasks, { title, id: Date.now() }])
     }
 
@@ -26,6 +27,7 @@ const TaskListContextProvider = (props) => {
     const findItem = id => {
         const item = tasks.find((task) => task.id === id)
         setEditItem(item);
+        console.log(item)
     }
 
     const editTask = (title, id) => {

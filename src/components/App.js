@@ -1,27 +1,24 @@
 import React from 'react'
-import '../app.css';
-import TaskList from './TaskList';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import TaskListContextProvider from '../context/TaskListContext'
-import TaskForm from './TaskForm';
 import Header from './Header';
 import Footer from './Footer';
-
+import '../app.css';
 
 const App = () => {
   return (
     <TaskListContextProvider>
-      <div className="container">
-        <div className="app-wrapper">
-          <Header />
-          <div className="main">
-            <TaskForm />
-            <TaskList />
+      <Router>
+        <div className="container">
+          <div className="app-wrapper">
+            <Header />
+            <div className="main">
+            </div>
+            <Footer />
           </div>
-          <Footer />
         </div>
-      </div>
+      </Router>
     </TaskListContextProvider>
-
   )
 }
 

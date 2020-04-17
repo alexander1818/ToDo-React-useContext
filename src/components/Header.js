@@ -14,7 +14,6 @@ const Header = () => {
                 <i className="fas fa-wifi"></i>
                 <i className="fas fa-battery-three-quarters"></i>
             </div>
-            <h1 className="title">Task Manager</h1>
         </div>
     )
 }
