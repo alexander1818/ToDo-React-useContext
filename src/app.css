@@ -14,7 +14,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6d275e;
+  /* background-color: #6d275e; */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .app-wrapper {
@@ -28,7 +29,7 @@ body {
   border: 5px solid #191919;
   border-radius: 40px;
   box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .top-block {
@@ -91,6 +92,7 @@ body {
 
 .header {
   color: #fff;
+  text-align: center;
 }
 
 .title {
@@ -110,7 +112,7 @@ body {
 
 .task-input {
   width: 250px;
-  margin: 0 20px;
+  margin: 0 25px;
   padding: 8px;
   border-radius: 15px;
   border: none;

@@ -1,18 +1,13 @@
 import React, { useState } from 'react'
 import MainPage from './MainPage';
-
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const Footer = () => {
     const [block, setBlock] = useState(false)
 
     const handleBlock = (block) => {
-        if (!block) {
-            setBlock(true)
-        }
-        else {
-            setBlock(false)
-        }
+        !block ? setBlock(true) : setBlock(false)
+
         console.log(block)
     }
 
@@ -24,6 +19,7 @@ const Footer = () => {
                     :
                     (<Link className="line" to="./"
                         onClick={() => handleBlock(block)}><div>Block</div></Link>)}
+
                 <Switch>
                     <Route exact path="/MainPage" component={MainPage} ></Route>
                     <Route exact path="/"></Route>

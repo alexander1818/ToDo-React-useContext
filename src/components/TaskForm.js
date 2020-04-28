@@ -41,6 +41,7 @@ const TaskForm = () => {
                     className="task-input"
                     placeholder="Add Task..."
                     required />
+
                 <div className="buttons">
                     <button type="submit"
                         className="btn add-task-btn">{editItem ? 'Edit Task' : 'Add Task'}
